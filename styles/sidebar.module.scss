@@ -1,0 +1,51 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 3fr;
+}
+.main > div:first-child {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.heading {
+    text-align: left;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.link {
+    text-align: left;
+    padding: 1rem;
+
+    border-right: solid grey 1px;
+    border-radius: 3px;
+
+    a {
+        transition: all 0.15s ease-in;
+
+        &:hover {
+            color: #bb89ff;
+        }
+    }
+}
+
+.folder {
+    display: grid;
+}
+
+.innerlink {
+    color: default;
+    margin-left: 10%;
+    padding: 0.25rem;
+
+    transition: all 0.15s ease-in;
+    box-shadow: none;
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 10px 10px 20px 0px #0000001c, -20px -20px 20px 0px #ffffff1c;
+    }
+}
